@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+--roseWhite: hsl(330, 100%, 98%);
+--eggshell: hsl(30, 54%, 90%);
+--lightGrey: hsl(30, 18%, 87%);
+--wengeBrown: hsl(30, 10%, 34%);
+--darkCharcoal: hsl(24, 5%, 18%);
+}
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--eggshell);
+    display: grid;
+    place-content: center;
+    line-height: 1.4;
+  
+}
+
+.container{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+h1{
+    font-family: 'Young', serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkCharcoal);
+    margin: 10px 0 10px;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-family: 'young', serif;
+    color: var(--nutmeg);
+    font-weight: 600;
+}
+
+p{
+    color: var(--wengeBrown);
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 1rem 0 0 0.5rem
+}
+
+ul, ol{
+    padding-left: 30px;
+}
+
+.preparacion{
+    background-color: var(--roseWhite);
+    border-radius: 1rem;
+    margin-bottom: 30px;
+    margin-top: 1.5rem;
+}
+
+strong{
+    font-family: 'Outfit', sans-serif;
+}
+
+.intrucciones{
+    border-top: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+
+
+
+h2.title-preparacion{
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    color: var(--darkRaspberry);
+    margin: 10px;
+    margin-top: 20px;
+}
+
+
+li{
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: var(--wengeBrown);
+}
+
+
+li::marker{
+    color: var(--darkRaspberry);
+    font-weight: 700;
+}
+
+table{
+width: 400px;
+border-collapse: collapse;
+font-family: 'Outfit';
+}
+
+tr, td{
+    border-bottom: 1px solid var(--lightGrey);
+    border-width: 75%;
+    padding: 10px 25px;
+}
+
+#datos{
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+
+@media(max-width: 540px){
+    h1{
+        margin-top: 2rem;
+    }
+
+    .container{
+        margin: 0;
+    }
+
+    .container img{
+        padding: 0;
+        border-radius: 0;
+    }
+}
